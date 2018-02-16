@@ -13,23 +13,28 @@ session_start();
     <body>
 
 	<?php
-	if (isset($_POST['nom']) AND isset($_POST['prenom']) AND $_POST['password'] == "kangourou")
+	if (isset($_POST['nom']) AND isset($_POST['prenom']) AND isset($_POST['ville']) AND isset($_POST['pays']) AND $_POST['password'] == "kangourou")
 	{
 	    $_SESSION['nom'] = $_POST['nom'];
 	    $_SESSION['prenom'] = $_POST['prenom'];
+	    $_SESSION['ville'] = $_POST['ville'];
+	    $_SESSION['pays'] = $_POST['pays'];
 	    $_SESSION['password'] = $_POST['password'];
 
 	    // Redirection
 	    header('Location: 4Espace_Administrateur.php');
 	}
 	
-	if (isset($_POST['nom']) AND isset($_POST['prenom']) AND $_POST['password'] == "truc")
+	if (isset($_POST['nom']) AND isset($_POST['prenom']) AND isset($_POST['ville']) AND isset($_POST['pays']) AND $_POST['password'] == "truc")
+
 
 	{
 	    
 	
 	    $_SESSION['nom'] = $_POST['nom'];
 	    $_SESSION['prenom'] = $_POST['prenom'];
+	    $_SESSION['ville'] = $_POST['ville'];
+	    $_SESSION['pays'] = $_POST['pays'];
 	    $_SESSION['password'] = $_POST['password'];
 
 	    // Redirection
